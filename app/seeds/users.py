@@ -2,9 +2,9 @@ from ..models import User, environment, SCHEMA, db
 from sqlalchemy.sql import text
 from random import randint
 from datetime import date
-from faker import Faker
+# from faker import Faker
 
-fake = Faker()
+# fake = Faker()
 
 
 
@@ -17,68 +17,132 @@ def seed_users():
     email = 'Demouser@gmail.com',
     password = 'password'
     )
+    # new_user2 = User(
+    #     first_name = 'Cristiano',
+    #     last_name = 'Ronaldo',
+    #     username = 'thegoat7',
+    #     email = fake.email(),
+    #     password = 'password'
+    #     )
+    # new_user3 = User(
+    #     first_name = 'Jude',
+    #     last_name = 'Bellingham',
+    #     username = 'heyJude',
+    #     email = fake.email(),
+    #     password = fake.password()
+    #     )
+    # new_user4 = User(
+    #     first_name = 'Karim',
+    #     last_name = "Benzema",
+    #     username = 'BigBenz9',
+    #     email = fake.email(),
+    #     password = fake.password()
+    #     )
+    # new_user5 = User(
+    #     first_name = 'David',
+    #     last_name = 'Beckham',
+    #     username = 'Bendit23',
+    #     email = fake.email(),
+    #     password = fake.password()
+    #     )
+    # new_user6 = User(
+    #     first_name = 'Raul',
+    #     last_name = 'Gonzales',
+    #     username = 'Raul7',
+    #     email = fake.email(),
+    #     password = fake.password()
+    #     )
+    # new_user7 = User(
+    #     first_name = 'Luka',
+    #     last_name = 'Modric',
+    #     username = 'Luka10',
+    #     email = fake.email(),
+    #     password = fake.password()
+    #     )
+    # new_user8 = User(
+    #     first_name = 'Zinedine',
+    #     last_name = 'Zidane',
+    #     username = 'Zizu5',
+    #     email = fake.email(),
+    #     password = fake.password()
+    #     )
+    # new_user9 = User(
+    #     first_name = 'Iker',
+    #     last_name = 'Casillas',
+    #     username = 'theWall',
+    #     email = fake.email(),
+    #     password = fake.password()
+    #     )
+    # new_user10 = User(
+    #     first_name = 'Alfredo',
+    #     last_name = 'DiStefano',
+    #     username = 'Legend',
+    #     email = fake.email(),
+    #     password = fake.password()
+    #     )
+
     new_user2 = User(
         first_name = 'Cristiano',
         last_name = 'Ronaldo',
         username = 'thegoat7',
-        email = fake.email(),
+        email = 'demo2@aa.io',
         password = 'password'
         )
     new_user3 = User(
         first_name = 'Jude',
         last_name = 'Bellingham',
         username = 'heyJude',
-        email = fake.email(),
-        password = fake.password()
+        email = 'demo3@aa.io',
+        password = 'password'
         )
     new_user4 = User(
         first_name = 'Karim',
         last_name = "Benzema",
         username = 'BigBenz9',
-        email = fake.email(),
-        password = fake.password()
+        email = 'demo4@aa.io',
+        password = 'password'
         )
     new_user5 = User(
         first_name = 'David',
         last_name = 'Beckham',
         username = 'Bendit23',
-        email = fake.email(),
-        password = fake.password()
+        email = 'demo5@aa.io',
+        password = 'password'
         )
     new_user6 = User(
         first_name = 'Raul',
         last_name = 'Gonzales',
         username = 'Raul7',
-        email = fake.email(),
-        password = fake.password()
+        email = 'demo6@aa.io',
+        password = 'password'
         )
     new_user7 = User(
         first_name = 'Luka',
         last_name = 'Modric',
         username = 'Luka10',
-        email = fake.email(),
-        password = fake.password()
+        email = 'demo7@aa.io',
+        password = 'password'
         )
     new_user8 = User(
         first_name = 'Zinedine',
         last_name = 'Zidane',
         username = 'Zizu5',
-        email = fake.email(),
-        password = fake.password()
+        email = 'demo8@aa.io',
+        password = 'password'
         )
     new_user9 = User(
         first_name = 'Iker',
         last_name = 'Casillas',
         username = 'theWall',
-        email = fake.email(),
-        password = fake.password()
+        email = 'demo9@aa.io',
+        password = 'password'
         )
     new_user10 = User(
         first_name = 'Alfredo',
         last_name = 'DiStefano',
         username = 'Legend',
-        email = fake.email(),
-        password = fake.password()
+        email = 'demo10@aa.io',
+        password = 'password'
         )
 
     users_list = [new_user1, new_user2, new_user3, new_user4, new_user5, new_user6, new_user7, new_user8, new_user9, new_user10]
