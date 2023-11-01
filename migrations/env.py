@@ -12,6 +12,9 @@ import os
 environment = os.getenv("FLASK_ENV")
 SCHEMA = os.environ.get("SCHEMA")
 
+print("SCHEMA: ######$$$$$$$$$$$$$$$$$$$$", SCHEMA)
+
+
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
